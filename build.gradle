@@ -15,7 +15,7 @@ buildscript {
         maven { url 'https://maven.google.com' }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.2.1'
+        classpath 'com.android.tools.build:gradle:8.5.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath 'com.google.dagger:hilt-android-gradle-plugin:2.40.1'
         classpath 'com.automattic.android:configure:0.6.1'
@@ -55,4 +55,3 @@ def gitDescribe(){
 def gitVersion() {
     (gitDescribe() =~ /^v/).replaceFirst('')
 }
-
